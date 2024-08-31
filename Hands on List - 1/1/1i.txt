@@ -1,0 +1,24 @@
+/* 
+   Name : 1(i).c
+   Author: Siddhesh Dare
+   Description :1. Create the following types of a files using (i)shell command
+                a. soft link (symlink system call)
+                b. hard link (link system call)
+                c. FIFO (mkfifo Library Function or mknod system call)
+    Date :  31 Aug          
+*/
+
+Shell Commands:
+sid@sid-Inspiron-3505:~/List1/1$ ln 1i.txt hrdlnk
+sid@sid-Inspiron-3505:~/List1/1$ ln -s 1i.txt Softlnk
+sid@sid-Inspiron-3505:~/List1/1$ mkfifo mypipe
+
+
+/*
+Output :
+-rw-rw-r-- 2 sid sid     0 Aug 31 17:52 1i.txt
+-rw-rw-r-- 2 sid sid     0 Aug 31 17:52 hrdlnk
+lrwxrwxrwx 1 sid sid     6 Aug 31 17:53 Softlnk -> 1i.txt
+prw-rw-r-- 1 sid sid     0 Aug 31 17:54 mypipe|
+*/
+
