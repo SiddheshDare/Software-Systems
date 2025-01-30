@@ -9,9 +9,9 @@ class TestSum(unittest.TestCase):
         """
         Test case to add two numbers
         """
-        data = [20, 33]
+        data = [20, 35]
         result = summation(data)
-        self.assertEqual(result, 50)
+        self.assertEqual(result, 55)
 
 if __name__ == '__main__':
     unittest.main()
