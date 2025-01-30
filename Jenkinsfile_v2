@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Clone Git') {
             steps {
-                git 'https://github.com/SiddheshDare/Software-Systems.git'
+                git branch: 'main', url: 'https://github.com/SiddheshDare/Software-Systems.git'
             }
         }
         stage('Build Code') {
